@@ -1,10 +1,11 @@
 # 👋 Hello, I'm ahmed elshiekh
-### Senior Software Engineer | Low-Level Enthusiast | System Architect
+### Senior Software Developer | Low-Level Enthusiast | System Architect
 
 ---
 
 ## 🚀 About Me
 - 🛠️ I specialize in building scalable backend systems and high-performance applications.
+- 🌐 Senior backend developer with laravel and express
 - 🦀 Passionate about **Rust**, **C/C++**, and decentralized systems.
 - 🐧 Linux power user and automation advocate.
 - 🔭 Currently exploring **Local LLMs** and **P2P Protocols**.
@@ -31,7 +32,7 @@
 ---
 
 ## 📊 GitHub Stats
-| ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=[اسم_المستخدم]&layout=compact&theme=vision-ary-dark) | ![Stats](https://github-readme-stats.vercel.app/api?username=[اسم_المستخدم]&show_icons=true&theme=vision-ary-dark) |
+| ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedElshiekh&layout=compact&theme=vision-ary-dark) | ![Stats](https://github-readme-stats.vercel.app/api?username=AhmedElshiekh&show_icons=true&theme=vision-ary-dark) |
 | :---: | :---: |
 
 ---
