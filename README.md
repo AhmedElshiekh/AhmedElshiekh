@@ -1,4 +1,4 @@
-# 👋 Hello, I'm [ahmed elshiekh]
+# 👋 Hello, I'm ahmed elshiekh
 ### Senior Software Engineer | Low-Level Enthusiast | System Architect
 
 ---
@@ -37,8 +37,8 @@
 ---
 
 ## 📫 How to reach me:
-- 💼 LinkedIn: [Your Profile Link]
-- 📧 Email: [Your Email]
-- 🌍 Website: [Your Portfolio]
+- 💼 LinkedIn: https://www.linkedin.com/in/ahmed-elshiekh-98a577119/
+- 📧 Email: ahmed_el.sh50@yahoo.com
+
 
 ---
