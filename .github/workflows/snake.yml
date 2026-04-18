@@ -1,4 +1,4 @@
-name: generate-signature-snake
+name: generate-ahmed-signature-snake
 
 on:
   schedule:
@@ -18,34 +18,37 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # خطوة "الرسم": توليد مساهمات برمجية تشكل اسمك
-      - name: Generate Name Contributions
+      - name: Draw AHMED on Contribution Grid
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          # سكريبت مصغر لرسم حرف A كمثال (يمكنك تكراره لبقية الحروف)
-          # يقوم بعمل commits بتواريخ ذكية لتظهر في الـ Grid
-          for i in {1..50}; do
-            # نرجع بالزمن لأسابيع معينة لرسم الأعمدة
-            d=$(date -I -d "$i weeks ago")
-            GIT_AUTHOR_DATE="$d 12:00:00" GIT_COMMITTER_DATE="$d 12:00:00" git commit --allow-empty -m "Signature"
-          done
-          git push origin main --force
-
-      # خطوة توليد الثعبان فوق الرسمة الجديدة
-      - name: generate-snake-svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          # المصفوفة تمثل الحروف (0 = فراغ، 1 = نقطة خضراء)
+          # كل حرف عبارة عن 5 أعمدة و 7 صفوف
+          # تم اختصار المنطق ليعمل في Bash
           
-      - name: push-to-output
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          declare -A map
+          # حرف A
+          map[0,1]=1; map[0,2]=1; map[0,3]=1; map[1,0]=1; map[1,2]=1; map[2,0]=1; map[2,2]=1; map[3,1]=1; map[3,2]=1; map[3,3]=1;
+          # حرف H
+          map[5,0]=1; map[5,1]=1; map[5,2]=1; map[5,3]=1; map[5,4]=1; map[7,2]=1; map[9,0]=1; map[9,1]=1; map[9,2]=1; map[9,3]=1; map[9,4]=1;
+          # حرف M
+          map[11,0]=1; map[11,4]=1; map[12,1]=1; map[13,2]=1; map[14,1]=1; map[15,0]=1; map[15,4]=1;
+          # حرف E
+          map[17,0]=1; map[17,1]=1; map[17,2]=1; map[17,3]=1; map[17,4]=1; map[18,0]=1; map[18,2]=1; map[18,4]=1; map[19,0]=1; map[19,2]=1; map[19,4]=1;
+          # حرف D
+          map[21,0]=1; map[21,1]=1; map[21,2]=1; map[21,3]=1; map[21,4]=1; map[22,0]=1; map[22,4]=1; map[23,1]=1; map[23,2]=1; map[23,3]=1;
+
+          START_WEEKS_AGO=50
+          
+          for col in {0..25}; do
+            for row in {0..6}; do
+              if [[ ${map[$col,$row]} == 1 ]]; then
+                # حساب عدد الأسابيع والأيام للوصول للمربع الصحيح
+                weeks_back=$((START_WEEKS_AGO - col))
+                days_back=$((row))
+                d=$(date -I -d "$weeks_back weeks ago + $days_back days")
+                
+                # عمل 20 commit لضمان اللون الأخضر الغامق
+                for i in {1..20}; do
+                  GIT_AUTHOR_DATE="$d 12:0
