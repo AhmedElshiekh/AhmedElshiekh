@@ -27,13 +27,13 @@
 ---
 
 #### 🌐 Backend & Server-Side
-<img height="20" src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
+<img height="40" src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
 
 #### 🦀 Systems & Infrastructure
-<img height="20" src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&theme=dark" />
+<img height="40" src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&theme=dark" />
 
 #### 📱 Mobile & Tools
-<img height="20" src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
+<img height="40" src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
 
 
 ---
