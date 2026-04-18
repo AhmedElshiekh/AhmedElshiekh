@@ -27,31 +27,17 @@
 ---
 
 #### 🌐 Backend & Server-Side
-<img src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
+<img height="20" src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
 
 #### 🦀 Systems & Infrastructure
-<img src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&theme=dark" />
+<img height="20" src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&theme=dark" />
 
 #### 📱 Mobile & Tools
-<img src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
+<img height="20" src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
 
 
 ---
 
-### 🛠️ Technical Expertise
-
-**• Languages & Systems**
-> `Rust` / `C` / `C++` / `PHP (Laravel)` / `Python` / `JavaScript (Node.js)`
-
-**• Infrastructure & Tools**
-> `Linux (Ubuntu/Debian)` / `Docker` / `Kubernetes` / `Bash Scripting` / `Git` / `Nginx`
-
-**• Specialized Knowledge**
-> `P2P Protocols` / `Decentralized Apps` / `LLM Optimization` / `High-Performance Computing`
-
----
-
----
 
 ## 🧠 Current Focus & Technical Interests
 - **Performance:** Writing high-efficiency code in **Rust** and **C/C++**.
