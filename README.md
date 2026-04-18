@@ -27,20 +27,16 @@
 ---
 
 
-## 🚀 Tech Stack & Core Expertise
+### 🛠️ Technical Ecosystem
 
 #### 🌐 Backend & Server-Side
-[![My Skills](https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,mongodb,redis)](https://skillicons.dev)
+<img src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
 
-#### 🦀 Systems & Low-Level
-[![My Skills](https://skillicons.dev/icons?i=rust,cpp,c,wasm,embedded)](https://skillicons.dev)
+#### 🦀 Systems & Infrastructure
+<img src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&theme=dark" />
 
-#### 🐧 Infrastructure & DevOps
-[![My Skills](https://skillicons.dev/icons?i=linux,ubuntu,docker,kubernetes,bash,githubactions,git)](https://skillicons.dev)
-
-#### 📱 Mobile & Frontend
-[![My Skills](https://skillicons.dev/icons?i=flutter,dart,html,css,js)](https://skillicons.dev)
-
+#### 📱 Mobile & Tools
+<img src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
 ---
 
 ### 🛠️ Technical Expertise
