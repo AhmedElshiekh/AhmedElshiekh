@@ -32,7 +32,9 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
-// A Senior's approach to problem solving
+
+## 🦀 My Coding Philosophy
+```rust
 impl SeniorDeveloper for Ahmed {
     fn solve_problem(&self, problem: Problem) -> Solution {
         let architecture = self.plan(problem);
@@ -40,6 +42,8 @@ impl SeniorDeveloper for Ahmed {
         optimized_code.ensure_memory_safety()
     }
 }
+```
+
 ---
 
 ## 🧠 Current Focus & Technical Interests
