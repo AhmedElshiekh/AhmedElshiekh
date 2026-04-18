@@ -1,7 +1,7 @@
-name: generate-name-art
+name: generate-professional-banner
 
 on:
-  workflow_dispatch: # تشغيل يدوي
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -13,30 +13,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Generate Professional ASCII Art
+      - name: Generate Custom SVG Banner
         run: |
-          # تثبيت أداة figlet لتوليد خطوط برمجية احترافية
-          sudo apt-get install -y figlet
-          
-          # إنشاء مجلد للمخرجات
           mkdir -p output
-          
-          # توليد الاسم بتنسيق "Slant" الجذاب للمبرمجين
-          echo "### My Identity in Code" > output/identity.md
-          echo '```text' >> output/identity.md
-          figlet -f slant "AHMED" >> output/identity.md
-          echo '```' >> output/identity.md
-          
-          # إضافة لمسة تقنية (System Info) لتعزيز مظهر الـ Senior
-          echo "---" >> output/identity.md
-          echo "**Last Compiled:** $(date)" >> output/identity.md
-          echo "**Environment:** GitHub Actions / Ubuntu-Latest" >> output/identity.md
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="100" viewBox="0 0 600 100">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3a7bd5;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="transparent" />
+            <text x="50%" y="50%" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="url(#grad1)" text-anchor="middle" dominant-baseline="middle">
+              AHMED ELSHIEKH
+            </text>
+          </svg>' > output/banner.svg
 
-      - name: Deploy to Output Branch
+      - name: Deploy Banner
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: art-assets
+          target_branch: output-assets
           build_dir: output
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN
-          }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
