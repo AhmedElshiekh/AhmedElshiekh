@@ -43,22 +43,18 @@
 
 ---
 
-### 🛠️ Core Technology Stack
+### 🛠️ Technical Expertise
 
-<p align="left">
-  <strong>• Systems & OS:</strong><br>
-  <img src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&perline=10" />
-</p>
+**• Languages & Systems**
+> `Rust` / `C` / `C++` / `PHP (Laravel)` / `Python` / `JavaScript (Node.js)`
 
-<p align="left">
-  <strong>• Backend & Logic:</strong><br>
-  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,mysql,redis,nginx&perline=10" />
-</p>
+**• Infrastructure & Tools**
+> `Linux (Ubuntu/Debian)` / `Docker` / `Kubernetes` / `Bash Scripting` / `Git` / `Nginx`
 
-<p align="left">
-  <strong>• Cross-Platform:</strong><br>
-  <img src="https://skillicons.dev/icons?i=flutter,dart,wasm&perline=10" />
-</p>
+**• Specialized Knowledge**
+> `P2P Protocols` / `Decentralized Apps` / `LLM Optimization` / `High-Performance Computing`
+
+---
 
 ---
 
