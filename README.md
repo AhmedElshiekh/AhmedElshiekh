@@ -31,14 +31,11 @@
 
 ---
 
-## 🛠️ Expertise Matrix
-
-| Domain | Tech Stack | Experience Level |
-| :--- | :--- | :--- |
-| **System Programming** | Rust, C/C++, Linux Kernel | Expert / Low-level |
-| **Backend Development** | PHP (Laravel), Node.js, Python | Architecture & API Design |
-| **Infrastructure** | Docker, Git, Linux Admin | DevOps & Automation |
-| **Future Tech** | P2P Protocols, Decentralized Apps | Research & Development |
+## 🧠 Current Focus & Technical Interests
+- **Performance:** Writing high-efficiency code in **Rust** and **C/C++**.
+- **Modern Backend:** Building robust APIs with **Laravel** and **Node.js**.
+- **System Internals:** Exploring **Linux** kernels and P2P decentralized systems.
+- **Local-First:** Developing software that prioritizes user sovereignty and privacy.
 
 ---
 
