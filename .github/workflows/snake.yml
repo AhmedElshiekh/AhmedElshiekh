@@ -1,14 +1,9 @@
-name: generate animation
+name: generate-signature-snake
 
 on:
-  # يعمل تلقائياً كل 24 ساعة
   schedule:
     - cron: "0 0 * * *" 
-  
-  # يسمح لك بتشغيله يدوياً في أي وقت
   workflow_dispatch:
-  
-  # يعمل عند كل عملية دفع (push) على فرع main
   push:
     branches:
     - main
@@ -18,11 +13,28 @@ jobs:
     permissions: 
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     
     steps:
-      # توليد لعبة الثعبان من سجل المساهمات
-      - name: generate github-contribution-grid-snake.svg
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # خطوة "الرسم": توليد مساهمات برمجية تشكل اسمك
+      - name: Generate Name Contributions
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          # سكريبت مصغر لرسم حرف A كمثال (يمكنك تكراره لبقية الحروف)
+          # يقوم بعمل commits بتواريخ ذكية لتظهر في الـ Grid
+          for i in {1..50}; do
+            # نرجع بالزمن لأسابيع معينة لرسم الأعمدة
+            d=$(date -I -d "$i weeks ago")
+            GIT_AUTHOR_DATE="$d 12:00:00" GIT_COMMITTER_DATE="$d 12:00:00" git commit --allow-empty -m "Signature"
+          done
+          git push origin main --force
+
+      # خطوة توليد الثعبان فوق الرسمة الجديدة
+      - name: generate-snake-svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -30,8 +42,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
           
-      # دفع الصور الناتجة إلى فرع الـ output
-      - name: push github-contribution-grid-snake.svg to the output branch
+      - name: push-to-output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
