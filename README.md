@@ -30,6 +30,15 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
+// A Senior's approach to problem solving
+impl SeniorDeveloper for Ahmed {
+    fn solve_problem(&self, problem: Problem) -> Solution {
+        let architecture = self.plan(problem);
+        let optimized_code = architecture.implement_with_performance();
+        optimized_code.ensure_memory_safety()
+    }
+}
+---
 
 ## 🧠 Current Focus & Technical Interests
 - **Performance:** Writing high-efficiency code in **Rust** and **C/C++**.
