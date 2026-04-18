@@ -26,9 +26,6 @@
 
 ---
 
-
-### 🛠️ Technical Ecosystem
-
 #### 🌐 Backend & Server-Side
 <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,redis&theme=dark" />
 
@@ -37,6 +34,8 @@
 
 #### 📱 Mobile & Tools
 <img src="https://skillicons.dev/icons?i=flutter,dart,git,githubactions,vscode&theme=dark" />
+
+
 ---
 
 ### 🛠️ Technical Expertise
