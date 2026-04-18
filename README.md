@@ -43,6 +43,25 @@
 
 ---
 
+### 🛠️ Core Technology Stack
+
+<p align="left">
+  <strong>• Systems & OS:</strong><br>
+  <img src="https://skillicons.dev/icons?i=rust,cpp,c,linux,bash,docker,kubernetes&perline=10" />
+</p>
+
+<p align="left">
+  <strong>• Backend & Logic:</strong><br>
+  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,py,mysql,redis,nginx&perline=10" />
+</p>
+
+<p align="left">
+  <strong>• Cross-Platform:</strong><br>
+  <img src="https://skillicons.dev/icons?i=flutter,dart,wasm&perline=10" />
+</p>
+
+---
+
 ## 🧠 Current Focus & Technical Interests
 - **Performance:** Writing high-efficiency code in **Rust** and **C/C++**.
 - **Modern Backend:** Building robust APIs with **Laravel** and **Node.js**.
