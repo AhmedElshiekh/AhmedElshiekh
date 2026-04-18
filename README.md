@@ -1,3 +1,15 @@
+<div align="center">
+
+# 👋 Senior Software Engineer
+  
+![My Name](https://raw.githubusercontent.com/AhmedElshiekh/AhmedElshiekh/output-assets/banner.svg)
+
+---
+
+### 💻 System Architect | Rust & C++ Enthusiast | Linux Power User
+
+</
+    div>
 
 ![Ahmed's Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=AHMED;SENIOR+SOFTWARE+ENGINEER;LINUX+ENTHUSIAST;SYSTEMS+ARCHITECT)
 
