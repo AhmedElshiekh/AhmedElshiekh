@@ -1,66 +1,42 @@
-name: generate-ahmed-snake
+name: generate-name-art
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # يعمل تلقائياً كل يوم في منتصف الليل
-  workflow_dispatch: # يتيح لك تشغيله يدوياً
+  workflow_dispatch: # تشغيل يدوي
   push:
     branches:
-    - main
+      - main
 
 jobs:
-  generate:
-    permissions: 
-      contents: write
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Draw AHMED on Contribution Grid
+      - name: Generate Professional ASCII Art
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # تثبيت أداة figlet لتوليد خطوط برمجية احترافية
+          sudo apt-get install -y figlet
           
-          # إحداثيات النقاط لرسم AHMED (x هو العمود، y هو الصف من 0-6)
-          points=(
-            "1,1" "1,2" "1,3" "1,4" "1,5" "2,0" "2,3" "3,0" "3,3" "4,1" "4,2" "4,3" "4,4" "4,5" # A
-            "7,0" "7,1" "7,2" "7,3" "7,4" "7,5" "7,6" "8,3" "9,3" "10,3" "11,0" "11,1" "11,2" "11,3" "11,4" "11,5" "11,6" # H
-            "14,0" "14,1" "14,2" "14,3" "14,4" "14,5" "14,6" "15,1" "16,2" "17,1" "18,0" "18,1" "18,2" "18,3" "18,4" "18,5" "18,6" # M
-            "21,0" "21,1" "21,2" "21,3" "21,4" "21,5" "21,6" "22,0" "22,3" "22,6" "23,0" "23,3" "23,6" # E
-            "26,0" "26,1" "26,2" "26,3" "26,4" "26,5" "26,6" "27,0" "27,6" "28,1" "28,2" "28,3" "28,4" "28,5" # D
-          )
+          # إنشاء مجلد للمخرجات
+          mkdir -p output
+          
+          # توليد الاسم بتنسيق "Slant" الجذاب للمبرمجين
+          echo "### My Identity in Code" > output/identity.md
+          echo '```text' >> output/identity.md
+          figlet -f slant "AHMED" >> output/identity.md
+          echo '```' >> output/identity.md
+          
+          # إضافة لمسة تقنية (System Info) لتعزيز مظهر الـ Senior
+          echo "---" >> output/identity.md
+          echo "**Last Compiled:** $(date)" >> output/identity.md
+          echo "**Environment:** GitHub Actions / Ubuntu-Latest" >> output/identity.md
 
-          # نبدأ الرسم من 40 أسبوعاً مضت لضمان ظهور الاسم في منتصف الجدول
-          START_WEEKS_AGO=40
-          
-          for p in "${points[@]}"; do
-            IFS=',' read -r x y <<< "$p"
-            weeks_back=$((START_WEEKS_AGO - x))
-            d=$(date -I -d "$weeks_back weeks ago + $y days")
-            
-            # 15 commit لكل نقطة لضمان اللون الأخضر الداكن
-            for i in {1..15}; do
-              GIT_AUTHOR_DATE="$d 12:00:00" GIT_COMMITTER_DATE="$d 12:00:00" git commit --allow-empty -m "Signature Work"
-            done
-          done
-          
-          git push origin main --force
-
-      - name: Generate Snake Animation
-        uses: Platane/snk/svg-only@v3
+      - name: Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          
-      - name: Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+          target_branch: art-assets
+          build_dir: output
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN
+          }}
