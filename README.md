@@ -1,3 +1,5 @@
+![snake github contribution graph](https://raw.githubusercontent.com/AhmedElshiekh/AhmedElshiekh/output/github-contribution-grid-snake.svg)
+
 # 👋 Hello, I'm ahmed elshiekh
 ### Senior Software Developer | Low-Level Enthusiast | System Architect
 
