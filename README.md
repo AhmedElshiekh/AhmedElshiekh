@@ -26,44 +26,20 @@
 
 ---
 
-# 🛠️ Technical Ecosystem
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌐 Backend & Server-Side</h3>
-      <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-      <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-      <br>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h3>🦀 Systems & Low-Level</h3>
-      <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-      <img src="https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-      <br>
-      <img src="https://img.shields.io/badge/Distributed-Systems-blue?style=for-the-badge&logo=p2p&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🐧 OS & Infrastructure</h3>
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-      <br>
-      <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛠️ Tools & DevOps</h3>
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-      <img src="https://img.shields.io/badge/CI/CD-Action-blue?style=for-the-badge&logo=github-actions&logoColor=white" />
-      <br>
-      <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
-    </td>
-  </tr>
-</table> 
+## 🚀 Tech Stack & Core Expertise
 
+#### 🌐 Backend & Server-Side
+[![My Skills](https://skillicons.dev/icons?i=php,laravel,nodejs,py,nginx,mysql,mongodb,redis)](https://skillicons.dev)
+
+#### 🦀 Systems & Low-Level
+[![My Skills](https://skillicons.dev/icons?i=rust,cpp,c,wasm,embedded)](https://skillicons.dev)
+
+#### 🐧 Infrastructure & DevOps
+[![My Skills](https://skillicons.dev/icons?i=linux,ubuntu,docker,kubernetes,bash,githubactions,git)](https://skillicons.dev)
+
+#### 📱 Mobile & Frontend
+[![My Skills](https://skillicons.dev/icons?i=flutter,dart,html,css,js)](https://skillicons.dev)
 
 ---
 
