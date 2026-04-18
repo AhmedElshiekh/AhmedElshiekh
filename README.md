@@ -1,7 +1,5 @@
 <div align="center">
 
-## 👋 Senior Software Developer 
-  
 ![My Name](https://raw.githubusercontent.com/AhmedElshiekh/AhmedElshiekh/output-assets/banner.svg)
 
 ---
@@ -10,7 +8,7 @@
 
 </div>
 
-![Ahmed's Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=AHMED;SENIOR+SOFTWARE+ENGINEER;LINUX+ENTHUSIAST;SYSTEMS+ARCHITECT)
+![Ahmed's Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=SENIOR+SOFTWARE+DEVELOPER;LINUX+ENTHUSIAST;SYSTEMS+ARCHITECT)
 
 
 ![Snake animation](https://raw.githubusercontent.com/AhmedElshiekh/AhmedElshiekh/output/github-contribution-grid-snake.svg)
