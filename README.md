@@ -4,7 +4,7 @@
 
 ---
 
-#### 💻 System Architect | Rust & C++ Enthusiast | Linux Power User
+#### 💻 System Architect | Rust & AI Enthusiast | Linux Power User
 
 </div>
 
