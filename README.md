@@ -31,9 +31,14 @@
 
 ---
 
-## 📊 GitHub Stats
-| ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedElshiekh&layout=compact&theme=vision-ary-dark) | ![Stats](https://github-readme-stats.vercel.app/api?username=AhmedElshiekh&show_icons=true&theme=vision-ary-dark) |
-| :---: | :---: |
+## 🛠️ Expertise Matrix
+
+| Domain | Tech Stack | Experience Level |
+| :--- | :--- | :--- |
+| **System Programming** | Rust, C/C++, Linux Kernel | Expert / Low-level |
+| **Backend Development** | PHP (Laravel), Node.js, Python | Architecture & API Design |
+| **Infrastructure** | Docker, Git, Linux Admin | DevOps & Automation |
+| **Future Tech** | P2P Protocols, Decentralized Apps | Research & Development |
 
 ---
 
