@@ -45,19 +45,6 @@
 
 ---
 
-## 🦀 My Coding Philosophy
-```rust
-impl SeniorDeveloper for Ahmed {
-    fn solve_problem(&self, problem: Problem) -> Solution {
-        let architecture = self.plan(problem);
-        let optimized_code = architecture.implement_with_performance();
-        optimized_code.ensure_memory_safety()
-    }
-}
-```
-
----
-
 ## 🧠 Current Focus & Technical Interests
 - **Performance:** Writing high-efficiency code in **Rust** and **C/C++**.
 - **Modern Backend:** Building robust APIs with **Laravel** and **Node.js**.
